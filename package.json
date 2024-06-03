@@ -1,5 +1,5 @@
 {
-  "name": "mono-repo-by-bm",
+  "name": "bm",
   "version": "1.0.0",
   "repository": "https://github.com/nanuya/ci-cd-test.git",
   "author": "nanuya <nanuya0331@gmail.com>",
@@ -7,5 +7,9 @@
   "private": true,
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "sv": "yarn workspace @bm/server",
+    "cl": "yarn workspace @bm/client"
+  }
 }
