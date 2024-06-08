@@ -11,5 +11,8 @@
   "scripts": {
     "sv": "yarn workspace @bm/server",
     "cl": "yarn workspace @bm/client"
+  },
+  "devDependencies": {
+    "uuid": "^9.0.1"
   }
 }
