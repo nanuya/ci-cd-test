@@ -1,0 +1,26 @@
+.todos-nav {
+    width: 100%;
+    margin-block: var(--gap-sm);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todos-nav__tab {
+    width: 100%;
+    padding-block: var(--gap-sm);
+    color: var(--point-color);
+    background-color: var(--bg-gray--100);
+}
+
+.todos-nav__tab + .active {
+    background-color: var(--point-color);
+    color: var(--white);
+}
+
+.todos-nav__tab:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--point-color);
+}

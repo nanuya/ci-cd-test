@@ -1,0 +1,17 @@
+.todos-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding-block: var(--gap-sm);
+}
+
+.todos-item__text {
+    width: 100%;
+    padding-inline: var(--gap-sm);
+}
+
+.todos-item__delete-btn {
+    width: 40px;
+}

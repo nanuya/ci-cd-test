@@ -1,0 +1,39 @@
+.todos-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-block: var(--gap-sm);
+  }
+
+  .todos-top__input-box {
+    width: 100%;
+  }
+
+  .todos-top__input {
+    width: 94%;
+    font-size: 14px;
+    padding: 12px;
+    border: 1px solid var(--point-color);
+    border-radius: 4px;
+  }
+
+  .todos-top__delete-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    line-height: 20px;
+    background: #cecece;
+    color: white;
+    font-size: 8px;
+    margin-inline-start: -25px;
+  }
+
+  .todos-top__submit-btn {
+    margin-inline-start: 12px;
+      background-color: var(--point-color);
+      color: white;
+      padding: 14px 18px;
+      border-radius: 4px;
+      flex: none;
+  }
