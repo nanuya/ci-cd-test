@@ -43,6 +43,14 @@ class Todo {
     delete(id) {
         this.#todoMap.delete(id);
     }
+    toggleCompleted(id) {
+        const todo = this.#todoMap.get(id);
+
+        this.#todoMap.set(id, {
+            ...todo,
+            completed: !todo.completed
+        });
+    }
 }
 
 module.exports = {

@@ -10,6 +10,12 @@ module.exports = (app) => {
         })
     });
 
+    app.get(`${BASE_URL}/ui-config`, (_, res) => {
+        res.status(200).json({
+            uiConfig: null
+        })
+    });
+
     app.post(BASE_URL, ({ body }, res) => {
         todoInstance.add(body);
 
@@ -18,15 +24,21 @@ module.exports = (app) => {
         });
     });
 
-    app.put(`${BASE_URL}/:id`, ({ body, params }, res) => {
+    app.put(`${BASE_URL}/:id`, ({ body }, res) => {
         todoInstance.modify(body);
 
-        res.status(201);
+        res.status(204).send();
     });
+
+    app.put(`${BASE_URL}/completed/:id`, ({ params }, res) => {
+        todoInstance.toggleCompleted(params.id);
+
+        res.status(204).send();
+    })
 
     app.delete(`${BASE_URL}/:id`, ({params}, res) => {
         todoInstance.delete(params.id);
 
-        res.status(204);
+        res.status(204).send();
     });
 }
