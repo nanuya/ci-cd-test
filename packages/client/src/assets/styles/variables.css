@@ -1,0 +1,20 @@
+:root {
+    /* color palette */
+    --point-color: rgb(33, 173, 173);
+    --secondary-color: rgb(239, 252, 221);
+    --black: #5e5e5e;
+    --white: white;
+    
+    --bg-gray--100: rgb(247, 247, 247);
+    --bg-gray--200: #c0c0c0;
+    
+    /* gap */
+    --gap-sm: 12px;
+    --gap-md: 16px;
+    --gap-lg: 20px;
+
+    /* font */
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-lg: 18px;
+}
