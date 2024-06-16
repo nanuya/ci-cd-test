@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "sv": "yarn workspace @bm/server",
-    "cl": "yarn workspace @bm/client"
+    "cl": "yarn workspace @bm/client",
+    "ssr": "yarn workspace @bm/ssr"
   },
   "devDependencies": {
     "uuid": "^9.0.1"
